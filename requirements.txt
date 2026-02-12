@@ -1,0 +1,5 @@
+# 语雀 Lakebook → Obsidian Markdown 转换工具
+PyYAML>=6.0
+BeautifulSoup4>=4.12.0
+html2text>=2024.2.26
+requests>=2.31.0

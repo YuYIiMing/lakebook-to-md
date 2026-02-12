@@ -1,0 +1,8 @@
+.venv/
+*.lakebook
+.laketmp/
+__pycache__/
+*.pyc
+.eggs/
+dist/
+*.egg-info/

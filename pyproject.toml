@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lakebook-to-obsidian"
+version = "0.1.0"
+description = "语雀 Lakebook 知识库转 Obsidian Markdown（保留层级，图片本地化）"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyYAML>=6.0",
+    "BeautifulSoup4>=4.12.0",
+    "html2text>=2024.2.26",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+lakebook2obsidian = "yuque_export.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
